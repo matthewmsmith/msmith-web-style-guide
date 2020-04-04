@@ -1,16 +1,14 @@
 .form {
     flex-basis: 100%;
-  }
   
-  .input{
+  .input {
     display: block;
     width: 94%;
     margin: 10px auto 0;
     border: none;
     padding: 10px;
-    border-bottom: 5px solid #58e1c1;
+    border-bottom: 5px solid $headline-primary;
   }
-  
   .hidden {
     position:absolute;
     left:-10000px;
@@ -18,6 +16,7 @@
     width:1px;
     height:1px;
     overflow:hidden;
+    
   }
-  
+}
   

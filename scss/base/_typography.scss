@@ -1,29 +1,41 @@
 * {
     font-family: 'Lato', sans-serif;
-    color: #777;
+    color: $headline-secondary;
     box-sizing: border-box;
-
-    a {
-        text-decoration: none;
-        font-weight: 700;
-        color: #51ddfc;
-    }
-    h1 {
-        color: #58e1c1;
-    } 
-    h4 {
-        font-weight: 300;
-        color: #777;
-    }
-
-    p {
-      line-height: 1.45em;
-      font-size: 1.5em;
-      font-weight: 300;
-     
-    }
-
 }
 
+a {
+    text-decoration: none;
+    font-weight: 700;
+    
+}
+  
 
+h1 {
+    color: #58e1c1;
+}
 
+h4 {
+    font-weight: 300;
+    color: $headline-secondary;
+}
+
+p {
+    line-height: 1.45em;
+    
+}
+
+.blockquote {
+    font-size: 1.5em;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 8px solid #58e1c1;
+    border-radius: 5px;
+
+.link {
+    color: #51ddfc;
+    font-weight: 700;
+  }
+}
