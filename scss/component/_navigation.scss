@@ -13,15 +13,16 @@
     transition: 
       background-color .2s ease-in-out, 
       color .2s ease-in-out;
-  
+  }
   &:hover {
     color: $white;
     background-color: $headline-primary;
    }
-  }
+  
 }
-  @media (min-width: $breakpoint-tablet) {
+  
     .nav {
+       @include tablet-size;
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
@@ -30,8 +31,9 @@
         flex-basis: 100px;
       }
     }
+  
     .logo {
       margin-left: initial;
       margin-right: initial;
     }
-  }
+  

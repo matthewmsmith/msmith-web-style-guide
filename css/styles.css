@@ -11,6 +11,9 @@
   text-transform: uppercase;
   border-radius: 5px;
 }
+.btn:hover {
+  background-color: initial;
+}
 
 .default {
   background-color: #51ddfc;
@@ -29,22 +32,14 @@
 }
 
 .warning {
-  background-color: #fd7865;
+  background-color: #fd7856;
 }
 
-@media (min-width: 768px) {
-  .btn {
-    padding: 10px 30px;
-  }
-
-  .btn + .btn {
-    margin-left: 10px;
-  }
-}
 .form {
   flex-basis: 100%;
 }
-.form .input {
+
+.input {
   display: block;
   width: 94%;
   margin: 10px auto 0;
@@ -52,7 +47,8 @@
   padding: 10px;
   border-bottom: 5px solid #58e1c1;
 }
-.form .hidden {
+
+.hidden {
   position: absolute;
   left: -10000px;
   top: auto;
@@ -117,12 +113,6 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1400px;
-  }
-
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .row {
@@ -216,12 +206,12 @@
   .nav-link {
     flex-basis: 100px;
   }
-
-  .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
 }
+.logo {
+  margin-left: initial;
+  margin-right: initial;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -600,10 +590,7 @@ p {
 }
 
 .img-avatar {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
+  @i margin-top: 10px;
   max-width: 100%;
   max-height: 100%;
 }
