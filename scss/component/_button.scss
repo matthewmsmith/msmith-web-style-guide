@@ -36,3 +36,12 @@
 }
 
 
+.btn {
+  @include tablet-size;
+  padding: 10px 30px;
+}
+
+.btn + .btn {
+  @include tablet-size;
+  margin-left: 10px;
+}

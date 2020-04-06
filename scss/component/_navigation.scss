@@ -33,6 +33,7 @@
     }
   
     .logo {
+      @include tablet-size;
       margin-left: initial;
       margin-right: initial;
     }
