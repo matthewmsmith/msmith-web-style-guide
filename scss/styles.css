@@ -21,20 +21,40 @@
   background-color: #51ddfc;
 }
 
+.default:hover {
+  background-color: #9cecfd;
+}
+
 .error {
   background-color: #e4757a;
+}
+
+.error:hover {
+  background-color: #f1b5b8;
 }
 
 .info {
   background-color: #927bc1;
 }
 
+.info:hover {
+  background-color: #bdafd9;
+}
+
 .success {
-  background-color: #63c;
+  background-color: #63cc82;
+}
+
+.success:hover {
+  background-color: #9ddfb0;
 }
 
 .warning {
-  background-color: #fd7856;
+  background-color: #fd7865;
+}
+
+.warning:hover {
+  background-color: white;
 }
 
 @media (min-width: 768px) {
@@ -44,29 +64,6 @@
   .btn + .btn {
     margin-left: 10px;
   }
-}
-
-.form {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
-.input {
-  display: block;
-  width: 94%;
-  margin: 10px auto 0;
-  border: none;
-  padding: 10px;
-  border-bottom: 5px solid #58e1c1;
-}
-
-.hidden {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
 }
 
 .container {
@@ -233,6 +230,29 @@
   }
 }
 
+.form {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.input {
+  display: block;
+  width: 94%;
+  margin: 10px auto 0;
+  border: none;
+  padding: 10px;
+  border-bottom: 5px solid #58e1c1;
+}
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .nav {
   padding-left: 0;
   -ms-flex-preferred-size: 100%;
@@ -256,7 +276,7 @@
   transition: background-color .2s ease-in-out,  color .2s ease-in-out;
 }
 
-.nav:hover {
+.nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
 }
