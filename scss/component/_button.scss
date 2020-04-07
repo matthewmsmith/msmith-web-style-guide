@@ -6,25 +6,40 @@
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
+
+  .btn:hover {
+    transform: scale(.99);
+  }
 }
 
-
+.default {
+  background-color: $default-bg;
+}
 
 .error {
-  background-color: #e4757a;
+  background-color: $error-bg;
 }
 
 .info {
-  background-color: #927bc1;
+  background-color: $purple-bg;
 }
 
 .success {
-  background-color: #63cc82;
+  background-color: $sucess-bg;
+  
+  &:hover {
+    background-color: lighteness($sucess-bg, 15%);
+  }
 }
 
 .warning {
-  background-color: #fd7856;
+  background-color: $warning-bg;
+
+  &:hover {
+    background-color: lighten($warning-bg, 65%);
+  }
 }
+
 
 
 @include tablet-size {

@@ -1,24 +1,19 @@
 /* ===========================/
-          // variables
- /========================== */
+         // variables
+/========================== */
 /* Media Query vars */
 .btn {
   margin-top: 15px;
   width: 100%;
   color: #fff;
   border: none;
-  padding: 10px 0;
+  padding: 10px 5px;
   text-transform: uppercase;
   border-radius: 5px;
 }
 
-.btn .btn:hover {
-  -webkit-transform: scale(0.99);
-  transform: scale(0.99);
-}
-
-.default {
-  background-color: #51ddfc;
+.btn:hover {
+  transform: scale(.98);
 }
 
 .error {
@@ -30,7 +25,7 @@
 }
 
 .success {
-  background-color: #63c;
+  background-color: #63cc82;
 }
 
 .warning {
@@ -47,7 +42,6 @@
   }
 }
 .form {
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
 }
 
@@ -74,19 +68,13 @@
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 1em 10px;
 }
 
 [class^=col] {
   margin-top: 10px;
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   min-height: 25px;
   padding: 10px;
@@ -142,7 +130,6 @@
 }
 
 .card {
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
 }
 
@@ -161,22 +148,13 @@
   }
 
   .row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
   }
 
   [class^=col] {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 0;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -185,62 +163,50 @@
   }
 
   .col-1 {
-    -ms-flex-preferred-size: 8.33%;
     flex-basis: 8.33%;
   }
 
   .col-2 {
-    -ms-flex-preferred-size: 16.67%;
     flex-basis: 16.67%;
   }
 
   .col-3 {
-    -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
   }
 
   .col-4 {
-    -ms-flex-preferred-size: 33.33%;
     flex-basis: 33.33%;
   }
 
   .col-5 {
-    -ms-flex-preferred-size: 41.67%;
     flex-basis: 41.67%;
   }
 
   .col-6 {
-    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
   }
 
   .col-7 {
-    -ms-flex-preferred-size: 58.33%;
     flex-basis: 58.33%;
   }
 
   .col-8 {
-    -ms-flex-preferred-size: 66.67%;
     flex-basis: 66.67%;
   }
 
   .col-9 {
-    -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
   }
 
   .col-10 {
-    -ms-flex-preferred-size: 83.33%;
     flex-basis: 83.33%;
   }
 
   .col-11 {
-    -ms-flex-preferred-size: 91.67%;
     flex-basis: 91.67%;
   }
 
   .col-12 {
-    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
   }
 
@@ -251,48 +217,31 @@
 }
 .nav {
   padding-left: 0;
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
-
-.nav-link {
+.nav .nav-link {
   text-align: center;
   border-radius: 5px;
   padding: 10px 0;
   display: block;
   width: 100%;
-  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-
-.nav:hover {
+.nav .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
 }
 
 @media (min-width: 768px) {
   .nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
     justify-content: flex-end;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
 
   .nav-link {
-    -ms-flex-preferred-size: 100px;
     flex-basis: 100px;
   }
 }
@@ -342,7 +291,6 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 1 */
   height: 0;
@@ -380,7 +328,6 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */
 }
@@ -528,7 +475,6 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   color: inherit;
@@ -563,7 +509,6 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -639,11 +584,14 @@ template {
   display: none;
 }
 
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+b {
   font-family: "Lato", sans-serif;
+  color: #777;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.45em;
 }
 
 a {
@@ -699,7 +647,5 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-
-/*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */
