@@ -3,9 +3,9 @@
   flex-basis: 100%;
   display: flex;
   flex-direction: column;
-}
+  
 
-.nav-link {
+&-link {
   text-align: center;
   border-radius: 5px;
   padding: 10px 0;
@@ -16,20 +16,20 @@
     color .2s ease-in-out;
 }
 
-.nav-link:hover {
+&:hover {
   color: #fff;
-  background-color: #58e1c1;
+  background-color: #58e1c1; 
+  }
 }
-
 
 @include tablet-size {
   .nav {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-  }
-  
-  .nav-link {
+
+  &-link {
     flex-basis: 100px;
   }
+ }
 }
