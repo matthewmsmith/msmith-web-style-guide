@@ -1,19 +1,12 @@
 .btn {
   margin-top: 15px;
   width: 100%;
-  color: white;
+  color: #fff;
   border: none;
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
-
-  &:hover {
-    color: red;
-    background-color: blue;
-  }
 }
-
-
 
 .default {
   background-color: #51ddfc;
@@ -36,12 +29,16 @@
 }
 
 
-.btn {
-  @include tablet-size;
-  padding: 10px 30px;
-}
 
-.btn + .btn {
-  @include tablet-size;
-  margin-left: 10px;
+@include tablet-size {
+  .btn {
+    padding: 10px 30px;
+  }
+  
+  .btn + .btn {
+    margin-left: 10px;
+  }
+  
+  
+
 }

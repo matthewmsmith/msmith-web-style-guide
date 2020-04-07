@@ -1,41 +1,37 @@
 * {
     font-family: 'Lato', sans-serif;
-    color: $headline-secondary;
+    color: #777;
     box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-    font-weight: 700;
-    
-}
+  }
   
-
-h1 {
-    color: #58e1c1;
-}
-
-h4 {
-    font-weight: 300;
-    color: $headline-secondary;
-}
-
-p {
+  p {
     line-height: 1.45em;
-    
-}
-
-.blockquote {
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  .headline-primary {
+    color: $headline-primary;
+    margin-left: 10px;
+  }
+  
+  .headline-secondary {
+    font-weight: 300;
+    color: $headline-primary;
+  }
+  
+  .link {
+    color: $default-bg;
+    font-weight: 700;
+  }
+  
+  .blockquote {
     font-size: 1.5em;
     font-weight: 300;
     font-style: italic;
     margin-left: 20px;
     padding-left: 20px;
-    border-left: 8px solid #58e1c1;
+    border-left: 8px solid $headline-primary;
     border-radius: 5px;
-
-.link {
-    color: #51ddfc;
-    font-weight: 700;
   }
-}
