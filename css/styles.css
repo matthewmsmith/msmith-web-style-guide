@@ -11,9 +11,8 @@
   text-transform: uppercase;
   border-radius: 5px;
   transition-property: background-color;
-  transition-duration: 0.6s;
-  transition-delay: 0.1s;
-  transition-timing-function: ease-out;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in;
 }
 .btn .btn:hover {
   transform: scale(0.99);
