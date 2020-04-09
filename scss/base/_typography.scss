@@ -1,15 +1,17 @@
 
- *:before,
- *:after {
-     box-sizing: border-box;
+ .container {
     font-family: 'Lato', sans-serif;
-    
- }
+     box-sizing: border-box;
+     color: #777;
 
-  
+ }
+  p {
+    line-height: 1.45em;
+  }
   a {
     text-decoration: none;
   }
+  
   .headline-primary {
     color: $headline-primary;
     margin-left: 10px;
@@ -17,7 +19,7 @@
   
   .headline-secondary {
     font-weight: 300;
-    color: $headline-primary;
+    color: #777;
   }
   
   .link { 

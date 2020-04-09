@@ -125,7 +125,7 @@
 }
 
 .col-12.theme {
-  background-color: #51ddfc;
+  background-color: #80e8d1;
 }
 
 .card {
@@ -630,10 +630,14 @@ template {
   display: none;
 }
 
-*:before,
-*:after {
-  box-sizing: border-box;
+.container {
   font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  color: #777;
+}
+
+p {
+  line-height: 1.45em;
 }
 
 a {
@@ -647,7 +651,7 @@ a {
 
 .headline-secondary {
   font-weight: 300;
-  color: #58e1c1;
+  color: #777;
 }
 
 .link {
